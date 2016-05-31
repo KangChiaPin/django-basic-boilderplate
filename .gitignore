@@ -3,6 +3,7 @@ _*
 .ropeproject/
 **/*.\pyc
 settings.ini
+static/
 db.*
 bower_components
 node_modules
