@@ -1,0 +1,4 @@
+Django==1.9.6
+django-webpack-loader==0.3.0
+pyjade==4.0.0
+six==1.10.0

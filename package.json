@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js --progress --colors",
+    "build": "webpack --config webpack.config.js --progress --colors --watch",
     "build-production": "webpack --config webpack.prod.config.js --progress --colors",
     "watch": "./node_modules/.bin/lsc dev-server.ls"
   },
@@ -15,8 +15,13 @@
     "babel": "^6.5.2",
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
+    "css-loader": "^0.23.1",
     "livescript": "^1.5.0",
+    "livescript-loader": "^0.1.5",
     "react": "^15.1.0",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.0",
     "webpack": "^1.13.1",
     "webpack-bundle-tracker": "0.0.93",
     "webpack-dev-server": "^1.14.1"
