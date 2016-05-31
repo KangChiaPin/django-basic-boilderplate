@@ -6,7 +6,7 @@ module.exports = {
   context: __dirname,
 
   entry: {
-    example: ['./assets/example/example.styl', './assets/example/index.ls'] // entry point of our app.
+    example: ['./assets/example/index.ls'] // entry point of our app.
   },
 
   output: {
