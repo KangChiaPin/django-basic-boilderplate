@@ -1,0 +1,15 @@
+_*
+*~
+.ropeproject/
+**/*.\pyc
+settings.ini
+db.*
+bower_components
+node_modules
+npm-debug.log
+*/migrations
+
+venv/
+node_modules/
+assets/bundles/
+webpack-stats.json
