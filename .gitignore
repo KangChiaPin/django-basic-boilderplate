@@ -12,4 +12,6 @@ npm-debug.log
 venv/
 node_modules/
 assets/bundles/
+assets/dist/
 webpack-stats.json
+webpack-stats-prod.json
