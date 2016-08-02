@@ -1,3 +1,3 @@
 require! \./example.styl
 
-console.log \h
+console.log \hi
