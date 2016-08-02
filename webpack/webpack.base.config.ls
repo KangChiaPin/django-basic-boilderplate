@@ -3,11 +3,11 @@ module.exports =
   context: __dirname
 
   entry:
-    example: [\../assets/example/index.ls] # entry point of our app.
+    example: \../assets/example/index.ls # entry point of our app.
 
   output:
-    path: path.resolve \./assets/bundles/
-    publicPath: \/static/bundles/
+    path: path.resolve \./static/bundles/
+    public-path: \/static/bundles/
     filename: '[name].js'
 
   plugins: [
@@ -21,7 +21,7 @@ module.exports =
       * test: /\.styl$/ loader: \style!css!stylus
 
   resolve:
-    modulesDirectories: [\node_modules]
+    modules-directories: [\node_modules]
     extensions: ['', \.js]
 
   stylus:

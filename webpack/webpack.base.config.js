@@ -19,11 +19,8 @@ module.exports = {
 
   module: { // should turn off hot reload in production mode
     loaders: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader'}, // to transform JSX into JS
       { test: /\.(eot|png|svg|jpg|ttf|woff2?)$/, loader: 'url-loader' },
-      { test: /\.css$/, loader: 'style!css' },
       { test: /\.ls$/, loader: 'livescript' },
-      { test: /\.pug$/, loader: 'pug-html' },
       { test: /\.styl$/, loader: 'style!css!stylus' },
     ] // add all common loaders here
   },

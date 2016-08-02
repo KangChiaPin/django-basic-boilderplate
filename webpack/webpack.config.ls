@@ -7,9 +7,6 @@ config.plugins = config.plugins.concat do
   * new webpack.NoErrorsPlugin! # don't reload if there is an error
   * new webpack-bundle-tracker filename: \./webpack/webpack-stats.json
   * new webpack-livereload-plugin!
-  * new webpack.ProvidePlugin do
-      $: \jquery
-      jQuery: \jquery
 
 config.watch = true
 
