@@ -1,29 +1,35 @@
 {
-  "name": "web",
-  "version": "1.0.0",
+  "name": "django-starter",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js --progress --colors --watch",
-    "build-production": "webpack --config webpack.prod.config.js --progress --colors",
-    "watch": "./node_modules/.bin/lsc dev-server.ls"
+    "start": "./node_modules/.bin/gulp --require livescript",
+    "build": "webpack --config webpack/webpack.config.ls --progress --colors",
+    "build-production": "webpack --config webpack/webpack.prod.config.ls --progress --colors"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-core": "^6.9.1",
-    "babel-loader": "^6.2.4",
-    "css-loader": "^0.23.1",
-    "livescript": "^1.5.0",
+  "author": "Kang Chia Pin",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "html-webpack-plugin": "^2.19.0",
+    "imports-loader": "^0.6.5",
+    "ini": "^1.3.4",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "jquery": "^2.2.3",
+    "livescript": "^1.4.0",
     "livescript-loader": "^0.1.5",
-    "react": "^15.1.0",
+    "lodash": "^4.13.1",
+    "nib": "^1.1.0",
+    "require-reload": "^0.2.2",
+    "script-loader": "^0.6.1",
     "style-loader": "^0.13.1",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^2.1.0",
+    "stylus": "^0.54.2",
+    "stylus-loader": "^2.0.0",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-bundle-tracker": "0.0.93",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-livereload-plugin": "^0.8.1"
   }
 }
