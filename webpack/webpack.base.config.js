@@ -6,12 +6,12 @@ module.exports = {
   context: __dirname,
 
   entry: {
-    example: ['./assets/example/index.ls'] // entry point of our app.
+    viewer: ['../assets/example/index.ls'], // entry point of our app.
   },
 
   output: {
     path: path.resolve('./assets/bundles/'),
-    filename: "[name]-[hash].js"
+    filename: "[name].js"
   },
 
   plugins: [
@@ -20,7 +20,7 @@ module.exports = {
   module: { // should turn off hot reload in production mode
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader'}, // to transform JSX into JS
-      { test: /\.(eot|png|svg|ttf|woff2?)$/, loader: 'url-loader' },
+      { test: /\.(eot|png|svg|jpg|ttf|woff2?)$/, loader: 'url-loader' },
       { test: /\.css$/, loader: 'style!css' },
       { test: /\.ls$/, loader: 'livescript' },
       { test: /\.pug$/, loader: 'pug-html' },
