@@ -17,3 +17,4 @@ assets/dist/
 webpack-stats.json
 webpack-stats-prod.json
 config.ini
+dist

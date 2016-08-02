@@ -1,6 +1,6 @@
 require! <[ path webpack webpack-bundle-tracker ]>
 config = require \./webpack.base.config.ls
-config.output.path = path.resolve \static/bundles
+config.output.path = path.resolve \dist
 
 config.plugins = config.plugins.concat do
   * new webpack-bundle-tracker filename: \./webpack/webpack-stats-prod.json
